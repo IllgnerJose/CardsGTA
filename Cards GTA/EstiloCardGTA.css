@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+main .cards {
+    background-color: grey;
+    width: calc(83%/3);
+    height: 75vh;
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+}
+
+main .cards .protagonista {
+
+    width: 360px;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+
+    transition: 0.4s;
+    filter: drop-shadow(20px 20px 20px black);
+
+}
+
+main .cards:hover .protagonista {
+    height: 540px;
+}
+
+main .cards .logo {
+
+    width: 320px;
+    height: 250px;
+    position: absolute;
+    bottom: 0;
+
+    filter: drop-shadow(20px 20px 20px black);
+}
+
+#gtaIV {
+    background-image: url("Imagens/Capa\ GTA\ IV.jpg");
+}
+
+#gtaV {
+    background-image: url("Imagens/Capa\ GTA\ V.jpg");
+}
+
+#gtaVI {
+    background-image: url("Imagens/Capa\ GTA\ vi.jpg");
+}
+
